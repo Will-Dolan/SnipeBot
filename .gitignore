@@ -1,0 +1,10 @@
+.history
+
+py/env
+py/.history
+py/config.py
+py/package
+py/app.zip
+py/__pycache__
+
+test
