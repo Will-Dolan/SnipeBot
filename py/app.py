@@ -51,7 +51,7 @@ class DBConnector:
 
 	def clear_snipes(self):
 		self.cursor.execute('truncate UserUserSnipe;')
-		self.cursor.commit()
+		self.cnx.commit()
 	
 	def insert_snipe(self, sniper_id, victim_id):
 		stmt = 'insert into UserUserSnipe values (%s, %s);'
